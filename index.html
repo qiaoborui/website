@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>🍓碎碎念</title>
+    <title>🍓公告板</title>
     <!-- <link rel="shortcut icon" href="./favicon.ico" /> -->
     <link type="text/css" rel="stylesheet" href="https://at.alicdn.com/t/font_1755564_z4mhxbw13mq.css"></link>
     <link href="https://fonts.loli.net/css?family=Noto+Serif+SC:200,300,900&display=swap&subset=chinese-simplified" rel="stylesheet">
@@ -21,13 +21,13 @@
 
 <body>
     <header id="header">
-        <h1>碎碎念</h1>
+        <h1>公告板</h1>
     </header>
     <main id="app">
         <aside>
         <img src="https://img.shields.io/badge/乔博睿-Strawberry-da282a" align="middle" />
         </aside>
-        <p class="tip">现在总共念叨了 {{count}} 条</p>
+        <p class="tip">现在总共显示了 {{count}} 条</p>
         <section class="item" v-for="item in contents" v-cloak>
             <p v-html='item.attributes.content'></p>
             <time v-bind:datetime="item.attributes.time">{{item.attributes.time}}</time>
